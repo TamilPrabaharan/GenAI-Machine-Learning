@@ -1,0 +1,36 @@
+R_Score with Train Test Split:
+------------------------------
+
+1.Multiple Linear Regression: 0.78 
+best parameter {'copy_X': True, 'fit_intercept': True, 'n_jobs': None}
+
+2.Support Vector Machine: 0.68 
+best parameter {'C': 2000, 'gamma': 'auto', 'kernel': 'linear'}
+
+3.Decision Tree: 0.73 
+best parameter {'criterion': 'squared_error', 'max_features': 'log2', 'splitter': 'best'}
+
+4.Random Forest: 0.86 
+best parameter {'criterion': 'squared_error', 'max_features': 'log2', 'n_estimators': 100}
+
+
+
+
+R_Score without Train Test Split by using GridSearchCV:
+-------------------------------------------------------
+
+1.Multiple Linear Regression: 0.74 
+best parameter {'copy_X': True, 'fit_intercept': True, 'n_jobs': None}
+
+2.Support Vector Machine: 0.71
+best parameter {'C': 1000, 'gamma': 'auto', 'kernel': 'linear'}
+
+3.Decision Tree: 0.99
+best parameter {'criterion': 'friedman_mse', 'max_features': 'log2', 'splitter': 'best'}
+
+4.Random Forest: 0.97 
+best parameter {'criterion': 'squared_error', 'max_features': 'log2', 'n_estimators': 100}
+
+------------------------------------------------------------
+Finally best model is Decision Tree: 0.99 using GridSearchCV
+------------------------------------------------------------
